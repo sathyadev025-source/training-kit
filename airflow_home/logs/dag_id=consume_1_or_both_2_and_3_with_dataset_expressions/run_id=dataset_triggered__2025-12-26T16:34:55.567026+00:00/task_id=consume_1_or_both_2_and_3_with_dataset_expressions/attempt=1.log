@@ -1,0 +1,20 @@
+[2025-12-26T22:05:23.875+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-26T22:05:23.905+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: consume_1_or_both_2_and_3_with_dataset_expressions.consume_1_or_both_2_and_3_with_dataset_expressions dataset_triggered__2025-12-26T16:34:55.567026+00:00 [queued]>
+[2025-12-26T22:05:23.911+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: consume_1_or_both_2_and_3_with_dataset_expressions.consume_1_or_both_2_and_3_with_dataset_expressions dataset_triggered__2025-12-26T16:34:55.567026+00:00 [queued]>
+[2025-12-26T22:05:23.911+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-26T22:05:23.934+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): consume_1_or_both_2_and_3_with_dataset_expressions> on 2025-12-26 16:34:55.567026+00:00
+[2025-12-26T22:05:23.940+0530] {standard_task_runner.py:64} INFO - Started process 3580 to run task
+[2025-12-26T22:05:23.945+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'consume_1_or_both_2_and_3_with_dataset_expressions', 'consume_1_or_both_2_and_3_with_dataset_expressions', 'dataset_triggered__2025-12-26T16:34:55.567026+00:00', '--job-id', '27', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py', '--cfg-path', '/tmp/tmpus_hzde3']
+[2025-12-26T22:05:23.946+0530] {standard_task_runner.py:91} INFO - Job 27: Subtask consume_1_or_both_2_and_3_with_dataset_expressions
+[2025-12-26T22:05:24.000+0530] {task_command.py:426} INFO - Running <TaskInstance: consume_1_or_both_2_and_3_with_dataset_expressions.consume_1_or_both_2_and_3_with_dataset_expressions dataset_triggered__2025-12-26T16:34:55.567026+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-26T22:05:24.088+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='consume_1_or_both_2_and_3_with_dataset_expressions' AIRFLOW_CTX_TASK_ID='consume_1_or_both_2_and_3_with_dataset_expressions' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T16:34:55.567026+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='dataset_triggered__2025-12-26T16:34:55.567026+00:00'
+[2025-12-26T22:05:24.090+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-26T22:05:24.091+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-26T22:05:24.092+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 5']
+[2025-12-26T22:05:24.105+0530] {subprocess.py:86} INFO - Output:
+[2025-12-26T22:05:29.108+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-26T22:05:29.110+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-26T22:05:29.165+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=consume_1_or_both_2_and_3_with_dataset_expressions, task_id=consume_1_or_both_2_and_3_with_dataset_expressions, run_id=dataset_triggered__2025-12-26T16:34:55.567026+00:00, execution_date=20251226T163455, start_date=20251226T163523, end_date=20251226T163529
+[2025-12-26T22:05:29.221+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-26T22:05:29.231+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-26T22:05:29.232+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,23 @@
+[2026-03-11T22:25:47.078+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-11T22:25:47.096+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_operator.venv_b scheduled__2026-03-10T00:00:00+00:00 [queued]>
+[2026-03-11T22:25:47.100+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_operator.venv_b scheduled__2026-03-10T00:00:00+00:00 [queued]>
+[2026-03-11T22:25:47.101+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-11T22:25:47.117+0530] {taskinstance.py:2330} INFO - Executing <Task(PythonVirtualenvOperator): venv_b> on 2026-03-10 00:00:00+00:00
+[2026-03-11T22:25:47.121+0530] {standard_task_runner.py:64} INFO - Started process 7316 to run task
+[2026-03-11T22:25:47.125+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_branch_operator', 'venv_b', 'scheduled__2026-03-10T00:00:00+00:00', '--job-id', '1756', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py', '--cfg-path', '/tmp/tmp4yqbftur']
+[2026-03-11T22:25:47.127+0530] {standard_task_runner.py:91} INFO - Job 1756: Subtask venv_b
+[2026-03-11T22:25:47.161+0530] {task_command.py:426} INFO - Running <TaskInstance: example_branch_operator.venv_b scheduled__2026-03-10T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-11T22:25:47.216+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_branch_operator' AIRFLOW_CTX_TASK_ID='venv_b' AIRFLOW_CTX_EXECUTION_DATE='2026-03-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-10T00:00:00+00:00'
+[2026-03-11T22:25:47.218+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-11T22:25:47.218+0530] {baseoperator.py:400} WARNING - PythonVirtualenvOperator.execute cannot be called outside TaskInstance!
+[2026-03-11T22:25:47.221+0530] {python.py:708} INFO - Python virtual environment will be cached in /tmp/venv-5ea997a7
+[2026-03-11T22:25:47.221+0530] {python.py:720} INFO - Re-using cached Python virtual environment in /tmp/venv-5ea997a7
+[2026-03-11T22:25:47.225+0530] {process_utils.py:183} INFO - Executing cmd: /tmp/venv-5ea997a7/bin/python /tmp/venv-callybbtru90/script.py /tmp/venv-callybbtru90/script.in /tmp/venv-callybbtru90/script.out /tmp/venv-callybbtru90/string_args.txt /tmp/venv-callybbtru90/termination.log
+[2026-03-11T22:25:47.227+0530] {process_utils.py:187} INFO - Output:
+[2026-03-11T22:25:47.346+0530] {process_utils.py:191} INFO - Hello World with some numpy stuff: [0 1 2 3 4 5]
+[2026-03-11T22:25:47.364+0530] {python.py:237} INFO - Done. Returned value was: None
+[2026-03-11T22:25:47.364+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-11T22:25:47.369+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_branch_operator, task_id=venv_b, run_id=scheduled__2026-03-10T00:00:00+00:00, execution_date=20260310T000000, start_date=20260311T165547, end_date=20260311T165547
+[2026-03-11T22:25:47.421+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-11T22:25:47.433+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-11T22:25:47.434+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

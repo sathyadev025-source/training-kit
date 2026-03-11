@@ -1,0 +1,119 @@
+[2026-01-14T19:50:59.960+0530] {processor.py:161} INFO - Started process (PID=1484) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:50:59.961+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:50:59.965+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:50:59.964+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:50:59.984+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:51:00.102+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:51:00.101+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:51:00.147+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:51:00.144+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:51:00.194+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.245 seconds
+[2026-01-14T19:52:02.526+0530] {processor.py:161} INFO - Started process (PID=1640) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:02.529+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:52:02.530+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:02.530+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:02.553+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:02.580+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:02.579+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:52:02.605+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:02.605+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:52:02.643+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.132 seconds
+[2026-01-14T19:52:39.360+0530] {processor.py:161} INFO - Started process (PID=1757) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:39.361+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:52:39.364+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:39.363+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:39.391+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:39.436+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:39.436+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:52:39.467+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:39.466+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:52:39.500+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.148 seconds
+[2026-01-14T19:52:58.893+0530] {processor.py:161} INFO - Started process (PID=1828) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:58.894+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:52:58.896+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:58.896+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:58.909+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:52:58.924+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:58.924+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:52:58.938+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:52:58.938+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:52:58.967+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.084 seconds
+[2026-01-14T19:53:38.372+0530] {processor.py:161} INFO - Started process (PID=1970) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:53:38.374+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:53:38.377+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:53:38.376+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:53:38.392+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:53:38.425+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:53:38.424+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:53:38.450+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:53:38.450+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:53:38.482+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.120 seconds
+[2026-01-14T19:53:50.325+0530] {processor.py:161} INFO - Started process (PID=2015) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:53:50.328+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:53:50.333+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:53:50.333+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:53:50.344+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:53:50.380+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:53:50.379+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:53:50.423+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:53:50.423+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:53:50.452+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.138 seconds
+[2026-01-14T19:54:34.202+0530] {processor.py:161} INFO - Started process (PID=2169) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:54:34.204+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:54:34.206+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:54:34.206+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:54:34.230+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:54:34.247+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:54:34.247+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:54:34.281+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:54:34.280+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:54:34.331+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.149 seconds
+[2026-01-14T19:54:45.486+0530] {processor.py:161} INFO - Started process (PID=2210) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:54:45.487+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:54:45.489+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:54:45.489+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:54:45.500+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:54:45.528+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:54:45.527+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:54:45.569+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:54:45.569+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:54:45.608+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.128 seconds
+[2026-01-14T19:55:29.493+0530] {processor.py:161} INFO - Started process (PID=2375) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:55:29.495+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:55:29.497+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:55:29.497+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:55:29.505+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:55:29.527+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:55:29.527+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:55:29.562+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:55:29.561+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:55:29.598+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.110 seconds
+[2026-01-14T19:56:50.609+0530] {processor.py:161} INFO - Started process (PID=2462) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:56:50.611+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:56:50.613+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:56:50.612+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:56:50.628+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:56:50.659+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:56:50.659+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:56:50.684+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:56:50.684+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:56:50.711+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.109 seconds
+[2026-01-14T19:57:36.557+0530] {processor.py:161} INFO - Started process (PID=2556) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:57:36.558+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:57:36.563+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:57:36.562+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:57:36.592+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:57:36.647+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:57:36.647+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:57:36.712+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:57:36.710+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:57:36.752+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.215 seconds
+[2026-01-14T19:58:31.108+0530] {processor.py:161} INFO - Started process (PID=2643) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:58:31.112+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:58:31.114+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:58:31.113+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:58:31.127+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:58:31.155+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:58:31.154+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:58:31.191+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:58:31.191+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:58:31.231+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.130 seconds
+[2026-01-14T19:59:23.892+0530] {processor.py:161} INFO - Started process (PID=2736) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:59:23.893+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T19:59:23.895+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:59:23.895+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:59:23.906+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T19:59:23.922+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:59:23.921+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T19:59:23.955+0530] {logging_mixin.py:188} INFO - [2026-01-14T19:59:23.954+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T19:59:24.009+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.126 seconds
+[2026-01-14T20:00:23.150+0530] {processor.py:161} INFO - Started process (PID=2827) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:00:23.152+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T20:00:23.156+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:00:23.155+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:00:23.170+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:00:23.196+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:00:23.195+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T20:00:23.234+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:00:23.233+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T20:00:23.276+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.136 seconds
+[2026-01-14T20:03:57.918+0530] {processor.py:161} INFO - Started process (PID=3045) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:03:57.921+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T20:03:57.923+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:03:57.923+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:03:57.946+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:03:58.090+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:03:58.090+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T20:03:58.116+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:03:58.115+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T20:03:58.150+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.242 seconds
+[2026-01-14T20:04:57.813+0530] {processor.py:161} INFO - Started process (PID=3143) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:04:57.815+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T20:04:57.817+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:04:57.816+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:04:57.825+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:04:57.843+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:04:57.843+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T20:04:57.862+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:04:57.861+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T20:04:57.888+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.083 seconds
+[2026-01-14T20:05:54.342+0530] {processor.py:161} INFO - Started process (PID=3254) to work on /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:05:54.346+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py for tasks to queue
+[2026-01-14T20:05:54.349+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:05:54.349+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:05:54.370+0530] {processor.py:840} INFO - DAG(s) 'daily_elt' retrieved from /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py
+[2026-01-14T20:05:54.404+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:05:54.403+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-14T20:05:54.522+0530] {logging_mixin.py:188} INFO - [2026-01-14T20:05:54.520+0530] {dag.py:3947} INFO - Setting next_dagrun for daily_elt to 2026-01-13 00:00:00+00:00, run_after=2026-01-14 00:00:00+00:00
+[2026-01-14T20:05:54.654+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/airflow_home/dags/elt_dag.py took 0.324 seconds

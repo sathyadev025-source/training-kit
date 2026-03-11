@@ -1,0 +1,36 @@
+[2026-03-10T23:32:39.200+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T23:32:39.272+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_elt.dbt_run manual__2026-03-09T17:13:33.714822+00:00 [queued]>
+[2026-03-10T23:32:39.289+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_elt.dbt_run manual__2026-03-09T17:13:33.714822+00:00 [queued]>
+[2026-03-10T23:32:39.290+0530] {taskinstance.py:2306} INFO - Starting attempt 5 of 6
+[2026-03-10T23:32:39.366+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2026-03-09 17:13:33.714822+00:00
+[2026-03-10T23:32:39.384+0530] {standard_task_runner.py:64} INFO - Started process 12540 to run task
+[2026-03-10T23:32:39.396+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_elt', 'dbt_run', 'manual__2026-03-09T17:13:33.714822+00:00', '--job-id', '1132', '--raw', '--subdir', 'DAGS_FOLDER/elt_dag.py', '--cfg-path', '/tmp/tmp5hwmczbp']
+[2026-03-10T23:32:39.400+0530] {standard_task_runner.py:91} INFO - Job 1132: Subtask dbt_run
+[2026-03-10T23:32:39.595+0530] {task_command.py:426} INFO - Running <TaskInstance: daily_elt.dbt_run manual__2026-03-09T17:13:33.714822+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-10T23:32:39.790+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-eng' AIRFLOW_CTX_DAG_ID='daily_elt' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-03-09T17:13:33.714822+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-09T17:13:33.714822+00:00'
+[2026-03-10T23:32:39.795+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T23:32:39.797+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-10T23:32:39.799+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/sathya/projects/training-kit && dbt run --profiles-dir /home/sathya/projects/training-kit']
+[2026-03-10T23:32:39.824+0530] {subprocess.py:86} INFO - Output:
+[2026-03-10T23:32:42.737+0530] {subprocess.py:93} INFO - [0m18:02:42  Running with dbt=1.5.0
+[2026-03-10T23:32:42.744+0530] {subprocess.py:93} INFO - [0m18:02:42  Encountered an error:
+[2026-03-10T23:32:42.745+0530] {subprocess.py:93} INFO - Runtime Error
+[2026-03-10T23:32:42.745+0530] {subprocess.py:93} INFO -   Could not find profile named 'training_project'
+[2026-03-10T23:32:45.017+0530] {subprocess.py:97} INFO - Command exited with return code 2
+[2026-03-10T23:32:45.019+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T23:32:45.040+0530] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2026-03-10T23:32:45.047+0530] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_elt, task_id=dbt_run, run_id=manual__2026-03-09T17:13:33.714822+00:00, execution_date=20260309T171333, start_date=20260310T180239, end_date=20260310T180245
+[2026-03-10T23:32:45.084+0530] {standard_task_runner.py:110} ERROR - Failed to execute job 1132 for task dbt_run (Bash command failed. The command returned a non-zero exit code 2.; 12540)
+[2026-03-10T23:32:45.122+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-03-10T23:32:45.154+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T23:32:45.156+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

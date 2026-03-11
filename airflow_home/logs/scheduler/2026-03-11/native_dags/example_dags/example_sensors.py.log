@@ -1,0 +1,42 @@
+[2026-03-11T22:23:55.572+0530] {processor.py:161} INFO - Started process (PID=7024) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:23:55.573+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-03-11T22:23:55.575+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:23:55.574+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:23:55.585+0530] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:23:55.606+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:23:55.605+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T22:23:55.618+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:23:55.618+0530] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-03-11T22:23:55.643+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.078 seconds
+[2026-03-11T22:35:24.151+0530] {processor.py:161} INFO - Started process (PID=8571) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:35:24.152+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-03-11T22:35:24.154+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:35:24.154+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:35:24.163+0530] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:35:24.182+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:35:24.182+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T22:35:24.189+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:35:24.189+0530] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-03-11T22:35:24.218+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.072 seconds
+[2026-03-11T22:43:17.492+0530] {processor.py:161} INFO - Started process (PID=9738) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:43:17.493+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-03-11T22:43:17.495+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:43:17.494+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:43:17.505+0530] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:43:17.526+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:43:17.526+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T22:43:17.536+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:43:17.535+0530] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-03-11T22:43:17.564+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.082 seconds
+[2026-03-11T22:49:48.674+0530] {processor.py:161} INFO - Started process (PID=10897) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:49:48.680+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-03-11T22:49:48.681+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:49:48.681+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:49:48.692+0530] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:49:48.711+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:49:48.711+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T22:49:48.719+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:49:48.719+0530] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-03-11T22:49:48.785+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.116 seconds
+[2026-03-11T22:55:57.210+0530] {processor.py:161} INFO - Started process (PID=11948) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:55:57.212+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-03-11T22:55:57.213+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:55:57.213+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:55:57.221+0530] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T22:55:57.236+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:55:57.236+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T22:55:57.243+0530] {logging_mixin.py:188} INFO - [2026-03-11T22:55:57.243+0530] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-03-11T22:55:57.263+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.058 seconds
+[2026-03-11T23:03:05.963+0530] {processor.py:161} INFO - Started process (PID=13104) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T23:03:05.967+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2026-03-11T23:03:05.971+0530] {logging_mixin.py:188} INFO - [2026-03-11T23:03:05.970+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T23:03:05.979+0530] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2026-03-11T23:03:06.005+0530] {logging_mixin.py:188} INFO - [2026-03-11T23:03:06.004+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T23:03:06.014+0530] {logging_mixin.py:188} INFO - [2026-03-11T23:03:06.014+0530] {dag.py:3947} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2026-03-11T23:03:06.044+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.087 seconds

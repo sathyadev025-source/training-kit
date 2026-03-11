@@ -1,0 +1,16 @@
+[2025-12-27T19:11:19.092+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-27T19:11:19.116+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_1 scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:11:19.123+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_skip_dag.skip_operator_1 scheduled__2025-12-26T00:00:00+00:00 [queued]>
+[2025-12-27T19:11:19.123+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-27T19:11:19.142+0530] {taskinstance.py:2330} INFO - Executing <Task(EmptySkipOperator): skip_operator_1> on 2025-12-26 00:00:00+00:00
+[2025-12-27T19:11:19.147+0530] {standard_task_runner.py:64} INFO - Started process 635 to run task
+[2025-12-27T19:11:19.156+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_skip_dag', 'skip_operator_1', 'scheduled__2025-12-26T00:00:00+00:00', '--job-id', '1525', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py', '--cfg-path', '/tmp/tmpwzxka9qh']
+[2025-12-27T19:11:19.156+0530] {standard_task_runner.py:91} INFO - Job 1525: Subtask skip_operator_1
+[2025-12-27T19:11:19.216+0530] {task_command.py:426} INFO - Running <TaskInstance: example_skip_dag.skip_operator_1 scheduled__2025-12-26T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-27T19:11:19.308+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_skip_dag' AIRFLOW_CTX_TASK_ID='skip_operator_1' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-26T00:00:00+00:00'
+[2025-12-27T19:11:19.310+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-27T19:11:19.310+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-27T19:11:19.315+0530] {taskinstance.py:1206} INFO - Marking task as SKIPPED. dag_id=example_skip_dag, task_id=skip_operator_1, run_id=scheduled__2025-12-26T00:00:00+00:00, execution_date=20251226T000000, start_date=20251227T134119, end_date=20251227T134119
+[2025-12-27T19:11:19.369+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-27T19:11:19.392+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:11:19.420+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

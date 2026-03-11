@@ -1,0 +1,20 @@
+[2026-03-10T21:12:35.293+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T21:12:35.313+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_short_circuit_decorator.condition_is_false scheduled__2026-03-09T00:00:00+00:00 [queued]>
+[2026-03-10T21:12:35.319+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_short_circuit_decorator.condition_is_false scheduled__2026-03-09T00:00:00+00:00 [queued]>
+[2026-03-10T21:12:35.319+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-10T21:12:35.335+0530] {taskinstance.py:2330} INFO - Executing <Task(_ShortCircuitDecoratedOperator): condition_is_false> on 2026-03-09 00:00:00+00:00
+[2026-03-10T21:12:35.340+0530] {standard_task_runner.py:64} INFO - Started process 1869 to run task
+[2026-03-10T21:12:35.347+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_short_circuit_decorator', 'condition_is_false', 'scheduled__2026-03-09T00:00:00+00:00', '--job-id', '155', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py', '--cfg-path', '/tmp/tmpn6w0q1n4']
+[2026-03-10T21:12:35.349+0530] {standard_task_runner.py:91} INFO - Job 155: Subtask condition_is_false
+[2026-03-10T21:12:35.406+0530] {task_command.py:426} INFO - Running <TaskInstance: example_short_circuit_decorator.condition_is_false scheduled__2026-03-09T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-10T21:12:35.476+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_short_circuit_decorator' AIRFLOW_CTX_TASK_ID='condition_is_false' AIRFLOW_CTX_EXECUTION_DATE='2026-03-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-09T00:00:00+00:00'
+[2026-03-10T21:12:35.479+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T21:12:35.480+0530] {python.py:237} INFO - Done. Returned value was: False
+[2026-03-10T21:12:35.480+0530] {python.py:304} INFO - Condition result is False
+[2026-03-10T21:12:35.481+0530] {python.py:331} INFO - Skipping downstream tasks
+[2026-03-10T21:12:35.505+0530] {python.py:339} INFO - Done.
+[2026-03-10T21:12:35.505+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T21:12:35.520+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_short_circuit_decorator, task_id=condition_is_false, run_id=scheduled__2026-03-09T00:00:00+00:00, execution_date=20260309T000000, start_date=20260310T154235, end_date=20260310T154235
+[2026-03-10T21:12:35.578+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-10T21:12:35.604+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T21:12:35.605+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

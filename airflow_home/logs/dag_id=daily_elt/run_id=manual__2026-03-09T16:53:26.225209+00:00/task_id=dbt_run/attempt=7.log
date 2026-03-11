@@ -1,0 +1,40 @@
+[2026-03-10T23:38:13.692+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T23:38:13.742+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_elt.dbt_run manual__2026-03-09T16:53:26.225209+00:00 [queued]>
+[2026-03-10T23:38:13.753+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_elt.dbt_run manual__2026-03-09T16:53:26.225209+00:00 [queued]>
+[2026-03-10T23:38:13.754+0530] {taskinstance.py:2306} INFO - Starting attempt 7 of 7
+[2026-03-10T23:38:13.816+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2026-03-09 16:53:26.225209+00:00
+[2026-03-10T23:38:13.832+0530] {standard_task_runner.py:64} INFO - Started process 13578 to run task
+[2026-03-10T23:38:13.843+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_elt', 'dbt_run', 'manual__2026-03-09T16:53:26.225209+00:00', '--job-id', '1230', '--raw', '--subdir', 'DAGS_FOLDER/elt_dag.py', '--cfg-path', '/tmp/tmpml2ce89s']
+[2026-03-10T23:38:13.849+0530] {standard_task_runner.py:91} INFO - Job 1230: Subtask dbt_run
+[2026-03-10T23:38:13.955+0530] {task_command.py:426} INFO - Running <TaskInstance: daily_elt.dbt_run manual__2026-03-09T16:53:26.225209+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-10T23:38:14.134+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-eng' AIRFLOW_CTX_DAG_ID='daily_elt' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-03-09T16:53:26.225209+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-09T16:53:26.225209+00:00'
+[2026-03-10T23:38:14.138+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T23:38:14.140+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-10T23:38:14.142+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/sathya/projects/training-kit && dbt run --profiles-dir /home/sathya/projects/training-kit']
+[2026-03-10T23:38:14.159+0530] {subprocess.py:86} INFO - Output:
+[2026-03-10T23:38:16.985+0530] {subprocess.py:93} INFO - [0m18:08:16  Running with dbt=1.5.0
+[2026-03-10T23:38:17.005+0530] {subprocess.py:93} INFO - [0m18:08:17  Encountered an error:
+[2026-03-10T23:38:17.007+0530] {subprocess.py:93} INFO - Runtime Error
+[2026-03-10T23:38:17.008+0530] {subprocess.py:93} INFO -   Could not find profile named 'training_project'
+[2026-03-10T23:38:17.862+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T23:38:17.913+0530] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: daily_elt.dbt_run manual__2026-03-09T16:53:26.225209+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2026-03-10T23:38:17.914+0530] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: daily_elt.dbt_run manual__2026-03-09T16:53:26.225209+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2026-03-10T23:38:17.929+0530] {local_task_job_runner.py:163} INFO - Task is not able to be run
+[2026-03-10T23:38:20.018+0530] {subprocess.py:97} INFO - Command exited with return code 2
+[2026-03-10T23:38:20.019+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T23:38:20.034+0530] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2026-03-10T23:38:20.045+0530] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=daily_elt, task_id=dbt_run, run_id=manual__2026-03-09T16:53:26.225209+00:00, execution_date=20260309T165326, start_date=20260310T180813, end_date=20260310T180820
+[2026-03-10T23:38:20.094+0530] {standard_task_runner.py:110} ERROR - Failed to execute job 1230 for task dbt_run (Bash command failed. The command returned a non-zero exit code 2.; 13578)
+[2026-03-10T23:38:20.149+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-03-10T23:38:20.187+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T23:38:20.244+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

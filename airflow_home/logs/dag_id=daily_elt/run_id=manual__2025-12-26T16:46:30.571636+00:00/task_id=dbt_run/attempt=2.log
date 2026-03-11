@@ -1,0 +1,33 @@
+[2025-12-26T22:21:51.001+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-26T22:21:51.014+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_elt.dbt_run manual__2025-12-26T16:46:30.571636+00:00 [queued]>
+[2025-12-26T22:21:51.017+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_elt.dbt_run manual__2025-12-26T16:46:30.571636+00:00 [queued]>
+[2025-12-26T22:21:51.018+0530] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-12-26T22:21:51.031+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2025-12-26 16:46:30.571636+00:00
+[2025-12-26T22:21:51.033+0530] {standard_task_runner.py:64} INFO - Started process 6072 to run task
+[2025-12-26T22:21:51.036+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_elt', 'dbt_run', 'manual__2025-12-26T16:46:30.571636+00:00', '--job-id', '513', '--raw', '--subdir', 'DAGS_FOLDER/elt_dag.py', '--cfg-path', '/tmp/tmpoyclz2sf']
+[2025-12-26T22:21:51.036+0530] {standard_task_runner.py:91} INFO - Job 513: Subtask dbt_run
+[2025-12-26T22:21:51.066+0530] {task_command.py:426} INFO - Running <TaskInstance: daily_elt.dbt_run manual__2025-12-26T16:46:30.571636+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-26T22:21:51.108+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-eng' AIRFLOW_CTX_DAG_ID='daily_elt' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2025-12-26T16:46:30.571636+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-26T16:46:30.571636+00:00'
+[2025-12-26T22:21:51.109+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-26T22:21:51.109+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-26T22:21:51.110+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/projects/training-kit/dbt_project/training_project && dbt run --profiles-dir ~/projects/training-kit/dbt']
+[2025-12-26T22:21:51.115+0530] {subprocess.py:86} INFO - Output:
+[2025-12-26T22:21:51.115+0530] {subprocess.py:93} INFO - /usr/bin/bash: line 1: cd: /home/sathya/projects/training-kit/dbt_project/training_project: No such file or directory
+[2025-12-26T22:21:51.116+0530] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-12-26T22:21:51.116+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-26T22:21:51.121+0530] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-12-26T22:21:51.124+0530] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=daily_elt, task_id=dbt_run, run_id=manual__2025-12-26T16:46:30.571636+00:00, execution_date=20251226T164630, start_date=20251226T165151, end_date=20251226T165151
+[2025-12-26T22:21:51.139+0530] {standard_task_runner.py:110} ERROR - Failed to execute job 513 for task dbt_run (Bash command failed. The command returned a non-zero exit code 1.; 6072)
+[2025-12-26T22:21:51.177+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-12-26T22:21:51.195+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-26T22:21:51.196+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

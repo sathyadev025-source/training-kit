@@ -1,0 +1,24 @@
+[2026-03-10T22:57:33.597+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T22:57:33.623+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_operator.branching_ext_python scheduled__2026-03-09T00:00:00+00:00 [queued]>
+[2026-03-10T22:57:33.633+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_operator.branching_ext_python scheduled__2026-03-09T00:00:00+00:00 [queued]>
+[2026-03-10T22:57:33.633+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-10T22:57:33.652+0530] {taskinstance.py:2330} INFO - Executing <Task(BranchExternalPythonOperator): branching_ext_python> on 2026-03-09 00:00:00+00:00
+[2026-03-10T22:57:33.658+0530] {standard_task_runner.py:64} INFO - Started process 4004 to run task
+[2026-03-10T22:57:33.662+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_branch_operator', 'branching_ext_python', 'scheduled__2026-03-09T00:00:00+00:00', '--job-id', '314', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py', '--cfg-path', '/tmp/tmpcagrit9l']
+[2026-03-10T22:57:33.665+0530] {standard_task_runner.py:91} INFO - Job 314: Subtask branching_ext_python
+[2026-03-10T22:57:33.777+0530] {task_command.py:426} INFO - Running <TaskInstance: example_branch_operator.branching_ext_python scheduled__2026-03-09T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-10T22:57:34.117+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_branch_operator' AIRFLOW_CTX_TASK_ID='branching_ext_python' AIRFLOW_CTX_EXECUTION_DATE='2026-03-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-09T00:00:00+00:00'
+[2026-03-10T22:57:34.119+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T22:57:34.120+0530] {baseoperator.py:400} WARNING - BranchExternalPythonOperator.execute cannot be called outside TaskInstance!
+[2026-03-10T22:57:34.190+0530] {baseoperator.py:400} WARNING - BranchExternalPythonOperator.execute cannot be called outside TaskInstance!
+[2026-03-10T22:57:34.214+0530] {process_utils.py:183} INFO - Executing cmd: /home/sathya/projects/training-kit/.venv-airflow/bin/python3.10 /tmp/venv-calloj3gin3q/script.py /tmp/venv-calloj3gin3q/script.in /tmp/venv-calloj3gin3q/script.out /tmp/venv-calloj3gin3q/string_args.txt /tmp/venv-calloj3gin3q/termination.log
+[2026-03-10T22:57:34.215+0530] {process_utils.py:187} INFO - Output:
+[2026-03-10T22:57:35.380+0530] {python.py:237} INFO - Done. Returned value was: ext_py_b
+[2026-03-10T22:57:35.380+0530] {branch.py:36} INFO - Branch into ext_py_b
+[2026-03-10T22:57:35.380+0530] {skipmixin.py:178} INFO - Following branch ext_py_b
+[2026-03-10T22:57:35.397+0530] {skipmixin.py:246} INFO - Skipping tasks [('ext_py_a', -1), ('ext_py_d', -1), ('ext_py_c', -1)]
+[2026-03-10T22:57:35.440+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T22:57:35.464+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_branch_operator, task_id=branching_ext_python, run_id=scheduled__2026-03-09T00:00:00+00:00, execution_date=20260309T000000, start_date=20260310T172733, end_date=20260310T172735
+[2026-03-10T22:57:35.525+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-10T22:57:35.560+0530] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T22:57:35.574+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,20 @@
+[2026-01-08T21:49:10.731+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-08T21:49:10.751+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_nested_branch_dag.branch_1 scheduled__2025-12-27T00:00:00+00:00 [queued]>
+[2026-01-08T21:49:10.756+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_nested_branch_dag.branch_1 scheduled__2025-12-27T00:00:00+00:00 [queued]>
+[2026-01-08T21:49:10.756+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-01-08T21:49:10.774+0530] {taskinstance.py:2330} INFO - Executing <Task(_BranchPythonDecoratedOperator): branch_1> on 2025-12-27 00:00:00+00:00
+[2026-01-08T21:49:10.777+0530] {standard_task_runner.py:64} INFO - Started process 799 to run task
+[2026-01-08T21:49:10.787+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_nested_branch_dag', 'branch_1', 'scheduled__2025-12-27T00:00:00+00:00', '--job-id', '5136', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py', '--cfg-path', '/tmp/tmp2xopum55']
+[2026-01-08T21:49:10.788+0530] {standard_task_runner.py:91} INFO - Job 5136: Subtask branch_1
+[2026-01-08T21:49:10.842+0530] {task_command.py:426} INFO - Running <TaskInstance: example_nested_branch_dag.branch_1 scheduled__2025-12-27T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-01-08T21:49:10.931+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_nested_branch_dag' AIRFLOW_CTX_TASK_ID='branch_1' AIRFLOW_CTX_EXECUTION_DATE='2025-12-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-27T00:00:00+00:00'
+[2026-01-08T21:49:10.932+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-08T21:49:10.932+0530] {python.py:237} INFO - Done. Returned value was: true_1
+[2026-01-08T21:49:10.932+0530] {branch.py:36} INFO - Branch into true_1
+[2026-01-08T21:49:10.932+0530] {skipmixin.py:178} INFO - Following branch true_1
+[2026-01-08T21:49:10.937+0530] {skipmixin.py:246} INFO - Skipping tasks [('false_1', -1)]
+[2026-01-08T21:49:10.959+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-08T21:49:10.977+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_nested_branch_dag, task_id=branch_1, run_id=scheduled__2025-12-27T00:00:00+00:00, execution_date=20251227T000000, start_date=20260108T161910, end_date=20260108T161910
+[2026-01-08T21:49:11.002+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-01-08T21:49:11.020+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-08T21:49:11.031+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

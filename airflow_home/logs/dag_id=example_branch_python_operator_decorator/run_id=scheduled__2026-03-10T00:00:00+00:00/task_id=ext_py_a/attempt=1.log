@@ -1,0 +1,20 @@
+[2026-03-11T22:23:11.813+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-11T22:23:11.835+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_python_operator_decorator.ext_py_a scheduled__2026-03-10T00:00:00+00:00 [queued]>
+[2026-03-11T22:23:11.841+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_python_operator_decorator.ext_py_a scheduled__2026-03-10T00:00:00+00:00 [queued]>
+[2026-03-11T22:23:11.841+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-11T22:23:11.859+0530] {taskinstance.py:2330} INFO - Executing <Task(_PythonExternalDecoratedOperator): ext_py_a> on 2026-03-10 00:00:00+00:00
+[2026-03-11T22:23:11.866+0530] {standard_task_runner.py:64} INFO - Started process 6957 to run task
+[2026-03-11T22:23:11.872+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_branch_python_operator_decorator', 'ext_py_a', 'scheduled__2026-03-10T00:00:00+00:00', '--job-id', '1726', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py', '--cfg-path', '/tmp/tmp7ceo7r52']
+[2026-03-11T22:23:11.874+0530] {standard_task_runner.py:91} INFO - Job 1726: Subtask ext_py_a
+[2026-03-11T22:23:11.924+0530] {task_command.py:426} INFO - Running <TaskInstance: example_branch_python_operator_decorator.ext_py_a scheduled__2026-03-10T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-11T22:23:11.995+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_branch_python_operator_decorator' AIRFLOW_CTX_TASK_ID='ext_py_a' AIRFLOW_CTX_EXECUTION_DATE='2026-03-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-10T00:00:00+00:00'
+[2026-03-11T22:23:11.996+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-11T22:23:12.065+0530] {process_utils.py:183} INFO - Executing cmd: /home/sathya/projects/training-kit/.venv-airflow/bin/python3.10 /tmp/venv-call0mh1jd28/script.py /tmp/venv-call0mh1jd28/script.in /tmp/venv-call0mh1jd28/script.out /tmp/venv-call0mh1jd28/string_args.txt /tmp/venv-call0mh1jd28/termination.log
+[2026-03-11T22:23:12.066+0530] {process_utils.py:187} INFO - Output:
+[2026-03-11T22:23:12.806+0530] {process_utils.py:191} INFO - doing something in external Python
+[2026-03-11T22:23:12.953+0530] {python.py:237} INFO - Done. Returned value was: None
+[2026-03-11T22:23:12.954+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-11T22:23:12.961+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_branch_python_operator_decorator, task_id=ext_py_a, run_id=scheduled__2026-03-10T00:00:00+00:00, execution_date=20260310T000000, start_date=20260311T165311, end_date=20260311T165312
+[2026-03-11T22:23:12.988+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-11T22:23:13.006+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-11T22:23:13.007+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

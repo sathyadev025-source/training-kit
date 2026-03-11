@@ -1,0 +1,17 @@
+[2025-12-27T20:04:13.698+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-27T20:04:13.720+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_sla_dag.sleep_20 scheduled__2025-12-27T14:32:00+00:00 [queued]>
+[2025-12-27T20:04:13.726+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_sla_dag.sleep_20 scheduled__2025-12-27T14:32:00+00:00 [queued]>
+[2025-12-27T20:04:13.726+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-27T20:04:13.744+0530] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): sleep_20> on 2025-12-27 14:32:00+00:00
+[2025-12-27T20:04:13.751+0530] {standard_task_runner.py:64} INFO - Started process 2576 to run task
+[2025-12-27T20:04:13.766+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_sla_dag', 'sleep_20', 'scheduled__2025-12-27T14:32:00+00:00', '--job-id', '2223', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py', '--cfg-path', '/tmp/tmpmen0cbog']
+[2025-12-27T20:04:13.767+0530] {standard_task_runner.py:91} INFO - Job 2223: Subtask sleep_20
+[2025-12-27T20:04:13.816+0530] {task_command.py:426} INFO - Running <TaskInstance: example_sla_dag.sleep_20 scheduled__2025-12-27T14:32:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-27T20:04:13.912+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='email@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_sla_dag' AIRFLOW_CTX_TASK_ID='sleep_20' AIRFLOW_CTX_EXECUTION_DATE='2025-12-27T14:32:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-27T14:32:00+00:00'
+[2025-12-27T20:04:13.913+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-27T20:04:33.934+0530] {python.py:237} INFO - Done. Returned value was: None
+[2025-12-27T20:04:33.938+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-27T20:04:33.981+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_sla_dag, task_id=sleep_20, run_id=scheduled__2025-12-27T14:32:00+00:00, execution_date=20251227T143200, start_date=20251227T143413, end_date=20251227T143433
+[2025-12-27T20:04:34.023+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-27T20:04:34.038+0530] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T20:04:34.047+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

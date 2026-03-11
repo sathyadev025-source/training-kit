@@ -1,0 +1,91 @@
+[2026-03-10T23:00:03.281+0530] {processor.py:161} INFO - Started process (PID=4614) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:00:03.283+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:00:03.284+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:00:03.283+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:00:03.303+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:00:03.434+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:00:03.434+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:00:03.448+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:00:03.448+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:00:03.545+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.282 seconds
+[2026-03-10T23:03:46.002+0530] {processor.py:161} INFO - Started process (PID=5538) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:03:46.004+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:03:46.007+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:03:46.006+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:03:46.023+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:03:46.060+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:03:46.060+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:03:46.075+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:03:46.075+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:03:46.107+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.115 seconds
+[2026-03-10T23:06:26.295+0530] {processor.py:161} INFO - Started process (PID=6218) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:06:26.297+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:06:26.298+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:06:26.298+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:06:26.315+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:06:26.351+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:06:26.350+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:06:26.365+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:06:26.365+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:06:26.407+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.126 seconds
+[2026-03-10T23:11:10.998+0530] {processor.py:161} INFO - Started process (PID=7427) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:11:11.001+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:11:11.002+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:11:11.001+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:11:11.011+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:11:11.036+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:11:11.036+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:11:11.048+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:11:11.048+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:11:11.080+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.090 seconds
+[2026-03-10T23:17:53.284+0530] {processor.py:161} INFO - Started process (PID=9099) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:17:53.287+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:17:53.288+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:17:53.287+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:17:53.304+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:17:53.339+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:17:53.339+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:17:53.356+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:17:53.355+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:17:53.414+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.143 seconds
+[2026-03-10T23:24:53.543+0530] {processor.py:161} INFO - Started process (PID=11042) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:24:53.553+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:24:53.556+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:24:53.555+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:24:53.596+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:24:53.701+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:24:53.700+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:24:53.742+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:24:53.740+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:24:53.825+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.319 seconds
+[2026-03-10T23:30:25.196+0530] {processor.py:161} INFO - Started process (PID=12131) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:30:25.200+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:30:25.206+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:30:25.204+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:30:25.246+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:30:25.342+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:30:25.341+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:30:25.380+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:30:25.379+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:30:25.456+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.283 seconds
+[2026-03-10T23:33:45.830+0530] {processor.py:161} INFO - Started process (PID=12737) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:33:45.838+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:33:45.841+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:33:45.840+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:33:45.877+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:33:45.945+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:33:45.945+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:33:45.984+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:33:45.983+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:33:46.069+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.260 seconds
+[2026-03-10T23:34:31.943+0530] {processor.py:161} INFO - Started process (PID=12919) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:34:31.946+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:34:31.949+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:34:31.947+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:34:31.988+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:34:32.144+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:34:32.144+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:34:32.188+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:34:32.188+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:34:32.615+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.699 seconds
+[2026-03-10T23:50:38.912+0530] {processor.py:161} INFO - Started process (PID=15144) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:50:38.915+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:50:38.919+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:50:38.918+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:50:38.949+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:50:39.016+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:50:39.015+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:50:39.047+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:50:39.047+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:50:39.134+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.241 seconds
+[2026-03-10T23:51:53.310+0530] {processor.py:161} INFO - Started process (PID=15310) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:51:53.318+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-10T23:51:53.321+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:51:53.320+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:51:53.345+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-10T23:51:53.416+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:51:53.415+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-10T23:51:53.444+0530] {logging_mixin.py:188} INFO - [2026-03-10T23:51:53.443+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-10T23:51:53.513+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.222 seconds
+[2026-03-11T00:03:12.839+0530] {processor.py:161} INFO - Started process (PID=16944) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-11T00:03:12.847+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-11T00:03:12.853+0530] {logging_mixin.py:188} INFO - [2026-03-11T00:03:12.850+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-11T00:03:12.898+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-11T00:03:13.001+0530] {logging_mixin.py:188} INFO - [2026-03-11T00:03:13.000+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T00:03:13.055+0530] {logging_mixin.py:188} INFO - [2026-03-11T00:03:13.055+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-11T00:03:13.158+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.349 seconds
+[2026-03-11T00:04:59.659+0530] {processor.py:161} INFO - Started process (PID=17166) to work on /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-11T00:04:59.663+0530] {processor.py:830} INFO - Processing file /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2026-03-11T00:04:59.668+0530] {logging_mixin.py:188} INFO - [2026-03-11T00:04:59.667+0530] {dagbag.py:545} INFO - Filling up the DagBag from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-11T00:04:59.697+0530] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2026-03-11T00:04:59.765+0530] {logging_mixin.py:188} INFO - [2026-03-11T00:04:59.763+0530] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-11T00:04:59.804+0530] {logging_mixin.py:188} INFO - [2026-03-11T00:04:59.803+0530] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2026-03-11T00:04:59.882+0530] {processor.py:183} INFO - Processing /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.240 seconds

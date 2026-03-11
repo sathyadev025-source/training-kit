@@ -1,0 +1,21 @@
+[2026-03-11T22:12:36.222+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-11T22:12:36.256+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: latest_only_with_trigger.latest_only scheduled__2026-03-10T16:00:00+00:00 [queued]>
+[2026-03-11T22:12:36.260+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: latest_only_with_trigger.latest_only scheduled__2026-03-10T16:00:00+00:00 [queued]>
+[2026-03-11T22:12:36.260+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-11T22:12:36.283+0530] {taskinstance.py:2330} INFO - Executing <Task(LatestOnlyOperator): latest_only> on 2026-03-10 16:00:00+00:00
+[2026-03-11T22:12:36.287+0530] {standard_task_runner.py:64} INFO - Started process 1157 to run task
+[2026-03-11T22:12:36.290+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'latest_only_with_trigger', 'latest_only', 'scheduled__2026-03-10T16:00:00+00:00', '--job-id', '1590', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py', '--cfg-path', '/tmp/tmpb_97kq4a']
+[2026-03-11T22:12:36.292+0530] {standard_task_runner.py:91} INFO - Job 1590: Subtask latest_only
+[2026-03-11T22:12:36.332+0530] {task_command.py:426} INFO - Running <TaskInstance: latest_only_with_trigger.latest_only scheduled__2026-03-10T16:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-11T22:12:36.401+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='latest_only_with_trigger' AIRFLOW_CTX_TASK_ID='latest_only' AIRFLOW_CTX_EXECUTION_DATE='2026-03-10T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-10T16:00:00+00:00'
+[2026-03-11T22:12:36.402+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-11T22:12:36.402+0530] {latest_only.py:63} INFO - Checking latest only with left_window: 2026-03-10 20:00:00+00:00 right_window: 2026-03-11 00:00:00+00:00 now: 2026-03-11 16:42:36.402822+00:00
+[2026-03-11T22:12:36.402+0530] {latest_only.py:71} INFO - Not latest execution, skipping downstream.
+[2026-03-11T22:12:36.403+0530] {branch.py:36} INFO - Branch into []
+[2026-03-11T22:12:36.403+0530] {skipmixin.py:178} INFO - Following branch []
+[2026-03-11T22:12:36.404+0530] {skipmixin.py:246} INFO - Skipping tasks [('task1', -1)]
+[2026-03-11T22:12:36.428+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-11T22:12:36.443+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=latest_only_with_trigger, task_id=latest_only, run_id=scheduled__2026-03-10T16:00:00+00:00, execution_date=20260310T160000, start_date=20260311T164236, end_date=20260311T164236
+[2026-03-11T22:12:36.463+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-11T22:12:36.476+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-11T22:12:36.486+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,34 @@
+[2025-12-27T19:35:39.784+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-27T19:35:39.822+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-12-13T00:00:00+00:00 map_index=2 [queued]>
+[2025-12-27T19:35:39.829+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-12-13T00:00:00+00:00 map_index=2 [queued]>
+[2025-12-27T19:35:39.830+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-27T19:35:39.854+0530] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): add_one> on 2022-12-13 00:00:00+00:00
+[2025-12-27T19:35:39.859+0530] {standard_task_runner.py:64} INFO - Started process 1450 to run task
+[2025-12-27T19:35:39.865+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dynamic_task_mapping', 'add_one', 'scheduled__2022-12-13T00:00:00+00:00', '--job-id', '1805', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py', '--cfg-path', '/tmp/tmpde6swaj3', '--map-index', '2']
+[2025-12-27T19:35:39.866+0530] {standard_task_runner.py:91} INFO - Job 1805: Subtask add_one
+[2025-12-27T19:35:39.921+0530] {task_command.py:426} INFO - Running <TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-12-13T00:00:00+00:00 map_index=2 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-27T19:35:40.006+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dynamic_task_mapping' AIRFLOW_CTX_TASK_ID='add_one' AIRFLOW_CTX_EXECUTION_DATE='2022-12-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-12-13T00:00:00+00:00'
+[2025-12-27T19:35:40.007+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-27T19:35:40.007+0530] {python.py:237} INFO - Done. Returned value was: 4
+[2025-12-27T19:35:40.008+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-27T19:35:40.024+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dynamic_task_mapping, task_id=add_one, run_id=scheduled__2022-12-13T00:00:00+00:00, map_index=2, execution_date=20221213T000000, start_date=20251227T140539, end_date=20251227T140540
+[2025-12-27T19:35:40.080+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-27T19:35:40.108+0530] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:35:40.128+0530] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-03-11T22:49:54.691+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-11T22:49:54.708+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-12-13T00:00:00+00:00 map_index=2 [queued]>
+[2026-03-11T22:49:54.712+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-12-13T00:00:00+00:00 map_index=2 [queued]>
+[2026-03-11T22:49:54.712+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-11T22:49:54.728+0530] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): add_one> on 2022-12-13 00:00:00+00:00
+[2026-03-11T22:49:54.733+0530] {standard_task_runner.py:64} INFO - Started process 10925 to run task
+[2026-03-11T22:49:54.736+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dynamic_task_mapping', 'add_one', 'scheduled__2022-12-13T00:00:00+00:00', '--job-id', '2108', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py', '--cfg-path', '/tmp/tmpbgrez2e1', '--map-index', '2']
+[2026-03-11T22:49:54.738+0530] {standard_task_runner.py:91} INFO - Job 2108: Subtask add_one
+[2026-03-11T22:49:54.770+0530] {task_command.py:426} INFO - Running <TaskInstance: example_dynamic_task_mapping.add_one scheduled__2022-12-13T00:00:00+00:00 map_index=2 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-11T22:49:54.834+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dynamic_task_mapping' AIRFLOW_CTX_TASK_ID='add_one' AIRFLOW_CTX_EXECUTION_DATE='2022-12-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-12-13T00:00:00+00:00'
+[2026-03-11T22:49:54.835+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-11T22:49:54.835+0530] {python.py:237} INFO - Done. Returned value was: 4
+[2026-03-11T22:49:54.835+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-11T22:49:54.851+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dynamic_task_mapping, task_id=add_one, run_id=scheduled__2022-12-13T00:00:00+00:00, map_index=2, execution_date=20221213T000000, start_date=20260311T171954, end_date=20260311T171954
+[2026-03-11T22:49:54.877+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-11T22:49:54.889+0530] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-11T22:49:54.898+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

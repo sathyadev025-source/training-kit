@@ -1,0 +1,8 @@
+.venv-airflow/
+profiles.yml
+airflow_home/*.db
+airflow_home/*.log
+airflow_home/*.pid
+__pycache__/
+airflow_home/airflow.db-journal
+

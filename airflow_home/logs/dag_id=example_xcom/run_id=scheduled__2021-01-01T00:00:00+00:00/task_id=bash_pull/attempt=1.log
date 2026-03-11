@@ -1,0 +1,48 @@
+[2025-12-26T22:07:21.368+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-26T22:07:21.411+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_xcom.bash_pull scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-12-26T22:07:21.423+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_xcom.bash_pull scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-12-26T22:07:21.423+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-26T22:07:21.446+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): bash_pull> on 2021-01-01 00:00:00+00:00
+[2025-12-26T22:07:21.451+0530] {standard_task_runner.py:64} INFO - Started process 3849 to run task
+[2025-12-26T22:07:21.459+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_xcom', 'bash_pull', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '79', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpescl6qft']
+[2025-12-26T22:07:21.461+0530] {standard_task_runner.py:91} INFO - Job 79: Subtask bash_pull
+[2025-12-26T22:07:21.499+0530] {task_command.py:426} INFO - Running <TaskInstance: example_xcom.bash_pull scheduled__2021-01-01T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-26T22:07:21.568+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_xcom' AIRFLOW_CTX_TASK_ID='bash_pull' AIRFLOW_CTX_EXECUTION_DATE='2021-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-01-01T00:00:00+00:00'
+[2025-12-26T22:07:21.569+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-26T22:07:21.569+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-26T22:07:21.570+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "bash pull demo" && echo "The xcom pushed manually is manually_pushed_value" && echo "The returned_value xcom is value_by_return" && echo "finished"']
+[2025-12-26T22:07:21.576+0530] {subprocess.py:86} INFO - Output:
+[2025-12-26T22:07:21.577+0530] {subprocess.py:93} INFO - bash pull demo
+[2025-12-26T22:07:21.577+0530] {subprocess.py:93} INFO - The xcom pushed manually is manually_pushed_value
+[2025-12-26T22:07:21.577+0530] {subprocess.py:93} INFO - The returned_value xcom is value_by_return
+[2025-12-26T22:07:21.577+0530] {subprocess.py:93} INFO - finished
+[2025-12-26T22:07:21.578+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-26T22:07:21.578+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-26T22:07:21.584+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_pull, run_id=scheduled__2021-01-01T00:00:00+00:00, execution_date=20210101T000000, start_date=20251226T163721, end_date=20251226T163721
+[2025-12-26T22:07:21.633+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-26T22:07:21.652+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-26T22:07:21.653+0530] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-03-10T22:15:16.111+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T22:15:16.141+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_xcom.bash_pull scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2026-03-10T22:15:16.149+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_xcom.bash_pull scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2026-03-10T22:15:16.149+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-10T22:15:16.170+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): bash_pull> on 2021-01-01 00:00:00+00:00
+[2026-03-10T22:15:16.175+0530] {standard_task_runner.py:64} INFO - Started process 2479 to run task
+[2026-03-10T22:15:16.180+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_xcom', 'bash_pull', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '207', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpf8s0ot3x']
+[2026-03-10T22:15:16.181+0530] {standard_task_runner.py:91} INFO - Job 207: Subtask bash_pull
+[2026-03-10T22:15:16.228+0530] {task_command.py:426} INFO - Running <TaskInstance: example_xcom.bash_pull scheduled__2021-01-01T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-10T22:15:16.320+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_xcom' AIRFLOW_CTX_TASK_ID='bash_pull' AIRFLOW_CTX_EXECUTION_DATE='2021-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-01-01T00:00:00+00:00'
+[2026-03-10T22:15:16.322+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T22:15:16.323+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-10T22:15:16.324+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "bash pull demo" && echo "The xcom pushed manually is manually_pushed_value" && echo "The returned_value xcom is value_by_return" && echo "finished"']
+[2026-03-10T22:15:16.341+0530] {subprocess.py:86} INFO - Output:
+[2026-03-10T22:15:16.345+0530] {subprocess.py:93} INFO - bash pull demo
+[2026-03-10T22:15:16.345+0530] {subprocess.py:93} INFO - The xcom pushed manually is manually_pushed_value
+[2026-03-10T22:15:16.346+0530] {subprocess.py:93} INFO - The returned_value xcom is value_by_return
+[2026-03-10T22:15:16.346+0530] {subprocess.py:93} INFO - finished
+[2026-03-10T22:15:16.346+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-10T22:15:16.347+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T22:15:16.360+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_pull, run_id=scheduled__2021-01-01T00:00:00+00:00, execution_date=20210101T000000, start_date=20260310T164516, end_date=20260310T164516
+[2026-03-10T22:15:16.448+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-10T22:15:16.470+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T22:15:16.471+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

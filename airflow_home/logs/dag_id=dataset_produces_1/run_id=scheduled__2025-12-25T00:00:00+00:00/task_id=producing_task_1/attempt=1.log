@@ -1,0 +1,20 @@
+[2025-12-26T22:04:50.270+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-26T22:04:50.299+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataset_produces_1.producing_task_1 scheduled__2025-12-25T00:00:00+00:00 [queued]>
+[2025-12-26T22:04:50.304+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataset_produces_1.producing_task_1 scheduled__2025-12-25T00:00:00+00:00 [queued]>
+[2025-12-26T22:04:50.304+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-26T22:04:50.321+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): producing_task_1> on 2025-12-25 00:00:00+00:00
+[2025-12-26T22:04:50.324+0530] {standard_task_runner.py:64} INFO - Started process 3477 to run task
+[2025-12-26T22:04:50.328+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'dataset_produces_1', 'producing_task_1', 'scheduled__2025-12-25T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py', '--cfg-path', '/tmp/tmpkrjx6hkg']
+[2025-12-26T22:04:50.329+0530] {standard_task_runner.py:91} INFO - Job 12: Subtask producing_task_1
+[2025-12-26T22:04:50.381+0530] {task_command.py:426} INFO - Running <TaskInstance: dataset_produces_1.producing_task_1 scheduled__2025-12-25T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-26T22:04:50.465+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dataset_produces_1' AIRFLOW_CTX_TASK_ID='producing_task_1' AIRFLOW_CTX_EXECUTION_DATE='2025-12-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-25T00:00:00+00:00'
+[2025-12-26T22:04:50.467+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-26T22:04:50.468+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-26T22:04:50.470+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 5']
+[2025-12-26T22:04:50.478+0530] {subprocess.py:86} INFO - Output:
+[2025-12-26T22:04:55.484+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-26T22:04:55.485+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-26T22:04:55.530+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dataset_produces_1, task_id=producing_task_1, run_id=scheduled__2025-12-25T00:00:00+00:00, execution_date=20251225T000000, start_date=20251226T163450, end_date=20251226T163455
+[2025-12-26T22:04:55.622+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-26T22:04:55.631+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-26T22:04:55.632+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

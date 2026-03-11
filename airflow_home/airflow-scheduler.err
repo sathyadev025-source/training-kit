@@ -1,0 +1,9 @@
+[2026-01-14 20:03:57 +0530] [3041] [INFO] Starting gunicorn 22.0.0
+[2026-01-14 20:03:57 +0530] [3041] [INFO] Listening at: http://[::]:8793 (3041)
+[2026-01-14 20:03:57 +0530] [3041] [INFO] Using worker: sync
+[2026-01-14 20:03:57 +0530] [3043] [INFO] Booting worker with pid: 3043
+[2026-01-14 20:03:57 +0530] [3044] [INFO] Booting worker with pid: 3044
+[2026-01-14 20:06:01 +0530] [3041] [INFO] Handling signal: term
+[2026-01-14 20:06:01 +0530] [3043] [INFO] Worker exiting (pid: 3043)
+[2026-01-14 20:06:01 +0530] [3044] [INFO] Worker exiting (pid: 3044)
+[2026-01-14 20:06:01 +0530] [3041] [INFO] Shutting down: Master

@@ -1,0 +1,19 @@
+default_environment: dev
+project_id: 019b50e6-c60b-7e65-894e-56c8fdc2769f
+
+environments:
+  - name: dev
+  - name: staging
+  - name: prod
+
+plugins:
+  extractors:
+    - name: tap-csv
+      variant: singer-io
+      pip_url: singer-tap-csv
+
+  loaders:
+    - name: target-postgres
+      variant: transferwise
+      pip_url: target-postgres[psycopg2-binary]
+

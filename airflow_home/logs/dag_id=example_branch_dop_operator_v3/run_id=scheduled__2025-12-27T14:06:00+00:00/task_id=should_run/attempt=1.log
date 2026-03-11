@@ -1,0 +1,22 @@
+[2025-12-27T19:37:24.780+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-27T19:37:24.806+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_dop_operator_v3.should_run scheduled__2025-12-27T14:06:00+00:00 [queued]>
+[2025-12-27T19:37:24.815+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_dop_operator_v3.should_run scheduled__2025-12-27T14:06:00+00:00 [queued]>
+[2025-12-27T19:37:24.815+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-27T19:37:24.837+0530] {taskinstance.py:2330} INFO - Executing <Task(_BranchPythonDecoratedOperator): should_run> on 2025-12-27 14:06:00+00:00
+[2025-12-27T19:37:24.841+0530] {standard_task_runner.py:64} INFO - Started process 1507 to run task
+[2025-12-27T19:37:24.849+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_branch_dop_operator_v3', 'should_run', 'scheduled__2025-12-27T14:06:00+00:00', '--job-id', '1825', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py', '--cfg-path', '/tmp/tmpsuxbtz3g']
+[2025-12-27T19:37:24.850+0530] {standard_task_runner.py:91} INFO - Job 1825: Subtask should_run
+[2025-12-27T19:37:24.908+0530] {task_command.py:426} INFO - Running <TaskInstance: example_branch_dop_operator_v3.should_run scheduled__2025-12-27T14:06:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-27T19:37:25.026+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_branch_dop_operator_v3' AIRFLOW_CTX_TASK_ID='should_run' AIRFLOW_CTX_EXECUTION_DATE='2025-12-27T14:06:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-27T14:06:00+00:00'
+[2025-12-27T19:37:25.027+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-27T19:37:25.035+0530] {logging_mixin.py:188} WARNING - /home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2025-12-27T19:37:25.036+0530] {logging_mixin.py:188} INFO - ------------- exec dttm = 2025-12-27 14:06:00+00:00 and minute = 6
+[2025-12-27T19:37:25.036+0530] {python.py:237} INFO - Done. Returned value was: empty_task_1
+[2025-12-27T19:37:25.036+0530] {branch.py:36} INFO - Branch into empty_task_1
+[2025-12-27T19:37:25.036+0530] {skipmixin.py:178} INFO - Following branch empty_task_1
+[2025-12-27T19:37:25.046+0530] {skipmixin.py:246} INFO - Skipping tasks [('empty_task_2', -1)]
+[2025-12-27T19:37:25.074+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-27T19:37:25.094+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_branch_dop_operator_v3, task_id=should_run, run_id=scheduled__2025-12-27T14:06:00+00:00, execution_date=20251227T140600, start_date=20251227T140724, end_date=20251227T140725
+[2025-12-27T19:37:25.142+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-27T19:37:25.174+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-27T19:37:25.175+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

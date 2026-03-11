@@ -1,0 +1,19 @@
+[2025-12-26T22:05:19.865+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-26T22:05:19.893+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_branch_datetime_operator_2.datetime_branch scheduled__2025-12-25T00:00:00+00:00 [queued]>
+[2025-12-26T22:05:19.899+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_branch_datetime_operator_2.datetime_branch scheduled__2025-12-25T00:00:00+00:00 [queued]>
+[2025-12-26T22:05:19.899+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-26T22:05:19.924+0530] {taskinstance.py:2330} INFO - Executing <Task(BranchDateTimeOperator): datetime_branch> on 2025-12-25 00:00:00+00:00
+[2025-12-26T22:05:19.927+0530] {standard_task_runner.py:64} INFO - Started process 3571 to run task
+[2025-12-26T22:05:19.931+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_branch_datetime_operator_2', 'datetime_branch', 'scheduled__2025-12-25T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py', '--cfg-path', '/tmp/tmpoyhty0k5']
+[2025-12-26T22:05:19.932+0530] {standard_task_runner.py:91} INFO - Job 25: Subtask datetime_branch
+[2025-12-26T22:05:19.987+0530] {task_command.py:426} INFO - Running <TaskInstance: example_branch_datetime_operator_2.datetime_branch scheduled__2025-12-25T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2025-12-26T22:05:20.067+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_branch_datetime_operator_2' AIRFLOW_CTX_TASK_ID='datetime_branch' AIRFLOW_CTX_EXECUTION_DATE='2025-12-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-25T00:00:00+00:00'
+[2025-12-26T22:05:20.068+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-26T22:05:20.069+0530] {branch.py:36} INFO - Branch into ['date_in_range']
+[2025-12-26T22:05:20.069+0530] {skipmixin.py:178} INFO - Following branch ['date_in_range']
+[2025-12-26T22:05:20.084+0530] {skipmixin.py:246} INFO - Skipping tasks [('date_outside_range', -1)]
+[2025-12-26T22:05:20.113+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-26T22:05:20.131+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_branch_datetime_operator_2, task_id=datetime_branch, run_id=scheduled__2025-12-25T00:00:00+00:00, execution_date=20251225T000000, start_date=20251226T163519, end_date=20251226T163520
+[2025-12-26T22:05:20.185+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-26T22:05:20.217+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-26T22:05:20.218+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

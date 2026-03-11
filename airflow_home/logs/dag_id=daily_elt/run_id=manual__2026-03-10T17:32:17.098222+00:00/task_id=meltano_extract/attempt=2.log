@@ -1,0 +1,40 @@
+[2026-03-10T23:12:40.894+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T23:12:40.911+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_elt.meltano_extract manual__2026-03-10T17:32:17.098222+00:00 [queued]>
+[2026-03-10T23:12:40.916+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_elt.meltano_extract manual__2026-03-10T17:32:17.098222+00:00 [queued]>
+[2026-03-10T23:12:40.916+0530] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-03-10T23:12:40.935+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): meltano_extract> on 2026-03-10 17:32:17.098222+00:00
+[2026-03-10T23:12:40.939+0530] {standard_task_runner.py:64} INFO - Started process 7840 to run task
+[2026-03-10T23:12:40.943+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_elt', 'meltano_extract', 'manual__2026-03-10T17:32:17.098222+00:00', '--job-id', '680', '--raw', '--subdir', 'DAGS_FOLDER/elt_dag.py', '--cfg-path', '/tmp/tmpd2xt1382']
+[2026-03-10T23:12:40.945+0530] {standard_task_runner.py:91} INFO - Job 680: Subtask meltano_extract
+[2026-03-10T23:12:40.983+0530] {task_command.py:426} INFO - Running <TaskInstance: daily_elt.meltano_extract manual__2026-03-10T17:32:17.098222+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-10T23:12:41.050+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-eng' AIRFLOW_CTX_DAG_ID='daily_elt' AIRFLOW_CTX_TASK_ID='meltano_extract' AIRFLOW_CTX_EXECUTION_DATE='2026-03-10T17:32:17.098222+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-10T17:32:17.098222+00:00'
+[2026-03-10T23:12:41.052+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T23:12:41.052+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-10T23:12:41.053+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/projects/training-kit/training-meltano && meltano elt tap-csv target-postgres']
+[2026-03-10T23:12:41.061+0530] {subprocess.py:86} INFO - Output:
+[2026-03-10T23:12:42.173+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:42.172782Z[0m [[32m[1minfo     [0m] [1mEnvironment 'dev' is active   [0m
+[2026-03-10T23:12:42.190+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:42.190296Z[0m [[33m[1mwarning  [0m] [1mA new version of Meltano is available (v4.1.2) and you are currently running v4.0.8. For more information, visit: https://docs.meltano.com/getting-started/installation.[0m
+[2026-03-10T23:12:42.314+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:42.313781Z[0m [[33m[1mwarning  [0m] [1mThe `elt` command is deprecated in favor of `el`[0m
+[2026-03-10T23:12:42.806+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:42.805854Z[0m [[32m[1minfo     [0m] [1mRunning extract & load...     [0m [36mname[0m=[35mmeltano[0m
+[2026-03-10T23:12:44.231+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:44.230618Z[0m [[32m[1minfo     [0m] [1mtap-csv v1.2.0, Meltano SDK v0.53.4[0m [36mname[0m=[35mtap-csv[0m
+[2026-03-10T23:12:44.231+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:44.231216Z[0m [[32m[1minfo     [0m] [1mSkipping parse of env var settings...[0m [36mname[0m=[35mtap-csv[0m
+[2026-03-10T23:12:44.232+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:44.231670Z[0m [[32m[1minfo     [0m] [1mBeginning sync of 'people' in full_table mode[0m [36mname[0m=[35mtap-csv[0m
+[2026-03-10T23:12:44.233+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:44.233038Z[0m [[32m[1minfo     [0m] [1mMETRIC: {"type":"timer","metric":"sync_duration","value":0.000713348388671875,"tags":{"stream":"people","pid":7846,"context":{},"status":"succeeded"}}[0m [36mname[0m=[35mtap-csv[0m
+[2026-03-10T23:12:44.233+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:44.233437Z[0m [[32m[1minfo     [0m] [1mMETRIC: {"type":"counter","metric":"record_count","value":3,"tags":{"stream":"people","pid":7846,"context":{}}}[0m [36mname[0m=[35mtap-csv[0m
+[2026-03-10T23:12:45.169+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:45.169005Z[0m [[32m[1minfo     [0m] [1mtarget-postgres v0.6.3, Meltano SDK v0.53.4[0m [36mname[0m=[35mtarget-postgres[0m
+[2026-03-10T23:12:45.169+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:45.169511Z[0m [[32m[1minfo     [0m] [1mSkipping parse of env var settings...[0m [36mname[0m=[35mtarget-postgres[0m
+[2026-03-10T23:12:45.170+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:45.169873Z[0m [[33m[1mwarning  [0m] [1mThe `dialect+driver` configuration option is deprecated. Please set it to `postgresql+psycopg`, as this will be the hard-coded value in the future.[0m [36mname[0m=[35mtarget-postgres[0m
+[2026-03-10T23:12:45.887+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:45.886997Z[0m [[32m[1minfo     [0m] [1mReader 'target-postgres' completed processing 5 lines of input (1 schemas, 3 records, 0 batch manifests, 1 state messages, 0 activate version messages).[0m [36mname[0m=[35mtarget-postgres[0m
+[2026-03-10T23:12:46.020+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:46.019490Z[0m [[32m[1minfo     [0m] [1mInserting with SQL: INSERT INTO "08019bac_9100_4299_9c24_b83b2a0a54f4" (id, name, age, _sdc_extracted_at, _sdc_received_at, _sdc_batched_at, _sdc_deleted_at, _sdc_sequence, _sdc_table_version, _sdc_sync_started_at) VALUES (:id, :name, :age, :_sdc_extracted_at, :_sdc_received_at, :_sdc_batched_at, :_sdc_deleted_at, :_sdc_sequence, :_sdc_table_version, :_sdc_sync_started_at)[0m [36mname[0m=[35mtarget-postgres[0m
+[2026-03-10T23:12:46.054+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:46.053532Z[0m [[32m[1minfo     [0m] [1mMETRIC                        [0m [36mmetric_name[0m=[35mbatch_processing_time[0m [36mmetric_value[0m=[35m0.15377235412597656[0m [36mname[0m=[35mtarget-postgres[0m
+[2026-03-10T23:12:46.058+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:46.058152Z[0m [[32m[1minfo     [0m] [1mMETRIC                        [0m [36mmetric_name[0m=[35mrecord_count[0m [36mmetric_value[0m=[35m3[0m [36mname[0m=[35mtarget-postgres[0m
+[2026-03-10T23:12:46.095+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:46.094371Z[0m [[32m[1minfo     [0m] [1mUsing systemdb state backend  [0m
+[2026-03-10T23:12:46.128+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:46.127883Z[0m [[32m[1minfo     [0m] [1mIncremental state has been updated at 2026-03-10 17:42:46.127774+00:00.[0m
+[2026-03-10T23:12:46.389+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:46.388937Z[0m [[32m[1minfo     [0m] [1mExtract & load complete!      [0m [36mname[0m=[35mmeltano[0m
+[2026-03-10T23:12:46.389+0530] {subprocess.py:93} INFO - [2m2026-03-10T17:42:46.389345Z[0m [[32m[1minfo     [0m] [1mTransformation skipped.       [0m [36mname[0m=[35mmeltano[0m
+[2026-03-10T23:12:48.225+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-10T23:12:48.227+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T23:12:48.257+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=daily_elt, task_id=meltano_extract, run_id=manual__2026-03-10T17:32:17.098222+00:00, execution_date=20260310T173217, start_date=20260310T174240, end_date=20260310T174248
+[2026-03-10T23:12:48.287+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-10T23:12:48.309+0530] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T23:12:48.323+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

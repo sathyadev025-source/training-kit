@@ -1,0 +1,24 @@
+[2026-03-11T22:15:44.561+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-11T22:15:44.580+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_elt.dbt_run scheduled__2026-03-10T00:00:00+00:00 [queued]>
+[2026-03-11T22:15:44.597+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_elt.dbt_run scheduled__2026-03-10T00:00:00+00:00 [queued]>
+[2026-03-11T22:15:44.597+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-03-11T22:15:44.617+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2026-03-10 00:00:00+00:00
+[2026-03-11T22:15:44.622+0530] {standard_task_runner.py:64} INFO - Started process 5684 to run task
+[2026-03-11T22:15:44.626+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'daily_elt', 'dbt_run', 'scheduled__2026-03-10T00:00:00+00:00', '--job-id', '1644', '--raw', '--subdir', 'DAGS_FOLDER/elt_dag.py', '--cfg-path', '/tmp/tmpbbnt43qi']
+[2026-03-11T22:15:44.627+0530] {standard_task_runner.py:91} INFO - Job 1644: Subtask dbt_run
+[2026-03-11T22:15:44.664+0530] {task_command.py:426} INFO - Running <TaskInstance: daily_elt.dbt_run scheduled__2026-03-10T00:00:00+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-11T22:15:44.729+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-eng' AIRFLOW_CTX_DAG_ID='daily_elt' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-03-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-10T00:00:00+00:00'
+[2026-03-11T22:15:44.731+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-11T22:15:44.731+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-11T22:15:44.732+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/sathya/projects/training-kit && dbt run --profiles-dir /home/sathya/projects/training-kit']
+[2026-03-11T22:15:44.739+0530] {subprocess.py:86} INFO - Output:
+[2026-03-11T22:15:46.327+0530] {subprocess.py:93} INFO - [0m16:45:46  Running with dbt=1.5.0
+[2026-03-11T22:15:46.503+0530] {subprocess.py:93} INFO - [0m16:45:46  Found 0 models, 0 tests, 0 snapshots, 0 analyses, 307 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[2026-03-11T22:15:46.505+0530] {subprocess.py:93} INFO - [0m16:45:46
+[2026-03-11T22:15:46.505+0530] {subprocess.py:93} INFO - [0m16:45:46  Nothing to do. Try checking your model configs and model specification args
+[2026-03-11T22:15:48.563+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-11T22:15:48.564+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-11T22:15:48.583+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=daily_elt, task_id=dbt_run, run_id=scheduled__2026-03-10T00:00:00+00:00, execution_date=20260310T000000, start_date=20260311T164544, end_date=20260311T164548
+[2026-03-11T22:15:48.646+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-11T22:15:48.668+0530] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-11T22:15:48.715+0530] {local_task_job_runner.py:222} INFO - ::endgroup::

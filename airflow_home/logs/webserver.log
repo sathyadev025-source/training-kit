@@ -1,0 +1,25 @@
+nohup: ignoring input
+/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:498 FutureWarning: section/key [webserver/update_fab_perms] has been deprecated, you should use[fab/update_fab_perms] instead. Please update your `conf.get*` call to use the new name
+[2026-01-08 22:59:54 +0530] [18722] [INFO] Starting gunicorn 22.0.0
+[2026-01-08 22:59:54 +0530] [18722] [INFO] Listening at: http://0.0.0.0:8080 (18722)
+[2026-01-08 22:59:54 +0530] [18722] [INFO] Using worker: sync
+[2026-01-08 22:59:54 +0530] [18812] [INFO] Booting worker with pid: 18812
+[2026-01-08 22:59:54 +0530] [18821] [INFO] Booting worker with pid: 18821
+[2026-01-08 22:59:55 +0530] [18824] [INFO] Booting worker with pid: 18824
+[2026-01-08 22:59:55 +0530] [18836] [INFO] Booting worker with pid: 18836
+[2026-01-08 23:00:15 +0530] [18722] [INFO] Handling signal: hup
+[2026-01-08 23:00:15 +0530] [18722] [INFO] Hang up: Master
+[2026-01-08 23:00:15 +0530] [18722] [ERROR] Worker (pid:18821) was sent SIGHUP!
+[2026-01-08 23:00:15 +0530] [18722] [ERROR] Worker (pid:18836) was sent SIGHUP!
+[2026-01-08 23:00:15 +0530] [18722] [ERROR] Worker (pid:18824) was sent SIGHUP!
+[2026-01-08 23:00:15 +0530] [18722] [ERROR] Worker (pid:18812) was sent SIGHUP!
+[2026-01-08 23:00:15 +0530] [19359] [INFO] Booting worker with pid: 19359
+[2026-01-08 23:00:15 +0530] [19360] [INFO] Booting worker with pid: 19360
+[2026-01-08 23:00:15 +0530] [19361] [INFO] Booting worker with pid: 19361
+[2026-01-08 23:00:15 +0530] [19362] [INFO] Booting worker with pid: 19362
+[2026-01-08 23:00:25 +0530] [19362] [INFO] Worker exiting (pid: 19362)
+[2026-01-08 23:00:25 +0530] [19359] [INFO] Worker exiting (pid: 19359)
+[2026-01-08 23:00:25 +0530] [19360] [INFO] Worker exiting (pid: 19360)
+[2026-01-08 23:00:25 +0530] [18722] [INFO] Handling signal: term
+[2026-01-08 23:00:25 +0530] [19361] [INFO] Worker exiting (pid: 19361)

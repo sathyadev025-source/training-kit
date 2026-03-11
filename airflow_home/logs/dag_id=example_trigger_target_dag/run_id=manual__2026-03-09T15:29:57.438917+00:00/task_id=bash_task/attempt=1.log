@@ -1,0 +1,21 @@
+[2026-03-10T22:53:45.563+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-10T22:53:45.590+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_trigger_target_dag.bash_task manual__2026-03-09T15:29:57.438917+00:00 [queued]>
+[2026-03-10T22:53:45.597+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_trigger_target_dag.bash_task manual__2026-03-09T15:29:57.438917+00:00 [queued]>
+[2026-03-10T22:53:45.598+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-10T22:53:45.620+0530] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): bash_task> on 2026-03-09 15:29:57.438917+00:00
+[2026-03-10T22:53:45.629+0530] {standard_task_runner.py:64} INFO - Started process 3639 to run task
+[2026-03-10T22:53:45.634+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_trigger_target_dag', 'bash_task', 'manual__2026-03-09T15:29:57.438917+00:00', '--job-id', '280', '--raw', '--subdir', '/home/sathya/projects/training-kit/.venv-airflow/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py', '--cfg-path', '/tmp/tmp6444vu8y']
+[2026-03-10T22:53:45.637+0530] {standard_task_runner.py:91} INFO - Job 280: Subtask bash_task
+[2026-03-10T22:53:45.690+0530] {task_command.py:426} INFO - Running <TaskInstance: example_trigger_target_dag.bash_task manual__2026-03-09T15:29:57.438917+00:00 [running]> on host LAPTOP-A1PMOBSE.localdomain
+[2026-03-10T22:53:45.767+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_trigger_target_dag' AIRFLOW_CTX_TASK_ID='bash_task' AIRFLOW_CTX_EXECUTION_DATE='2026-03-09T15:29:57.438917+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-09T15:29:57.438917+00:00'
+[2026-03-10T22:53:45.769+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-10T22:53:45.770+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-10T22:53:45.772+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "Here is the message: $message"']
+[2026-03-10T22:53:45.784+0530] {subprocess.py:86} INFO - Output:
+[2026-03-10T22:53:45.785+0530] {subprocess.py:93} INFO - Here is the message: Hello World
+[2026-03-10T22:53:45.785+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-10T22:53:45.786+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-10T22:53:45.812+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_trigger_target_dag, task_id=bash_task, run_id=manual__2026-03-09T15:29:57.438917+00:00, execution_date=20260309T152957, start_date=20260310T172345, end_date=20260310T172345
+[2026-03-10T22:53:45.862+0530] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-10T22:53:45.892+0530] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T22:53:45.892+0530] {local_task_job_runner.py:222} INFO - ::endgroup::
