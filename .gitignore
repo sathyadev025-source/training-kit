@@ -6,3 +6,6 @@ airflow_home/*.pid
 __pycache__/
 airflow_home/airflow.db-journal
 
+.venv-airflow/
+data/
+airflow_home/
