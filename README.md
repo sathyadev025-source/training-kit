@@ -1,43 +1,119 @@
-# Automated Finance Data Pipeline (ETL)
-
-## 📌 Project Overview
-An end-to-end data engineering pipeline that automates the extraction, loading, and transformation of daily finance records. This project demonstrates a "Modern Data Stack" approach using containerized-style orchestration on a local Linux (WSL2) environment.
-
-## 🛠️ Tech Stack
-* **Orchestrator:** Apache Airflow (Python-based DAGs)
-* **Ingestion:** Meltano (ELT tool for seamless data movement)
-* **Transformation:** dbt (data build tool) for SQL modeling
-* **Database:** PostgreSQL (Target Data Warehouse)
-* **Environment:** Ubuntu on WSL2
-
-## 🚀 Key Features
-* **Automated Scheduling:** Daily DAGs handle data updates without manual intervention.
-* **Data Quality:** Integrated dbt tests to ensure data integrity during transformation.
-* **Error Handling:** Configured custom Airflow paths and profiles to manage local environment constraints.
-
-## 📈 Database Schema
-The pipeline transforms raw Excel/CSV data into a structured format in PostgreSQL, focusing on aggregate reporting and financial analysis.
-
+🏦 Automated Finance Branch Performance Pipeline (ELT)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Airflow](https://img.shields.io/badge/Airflow-2.x-green)
+![dbt](https://img.shields.io/badge/dbt-1.x-orange)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue)
+![Meltano](https://img.shields.io/badge/Meltano-ELT-purple)
+📌 Project Overview
+An end-to-end ELT data engineering pipeline that automates the extraction, loading, and transformation of daily branch-level finance records (targets vs actuals). Built using the Modern Data Stack on a local Linux (WSL2) environment.
+This project simulates a real-world NBFC/banking scenario — branch sales performance data flows from raw Excel files through Meltano into PostgreSQL, where dbt models transform it into clean, reportable tables orchestrated by Apache Airflow.
 ---
+🛠️ Tech Stack
+Layer	Tool
+Orchestration	Apache Airflow
+Ingestion	Meltano
+Transformation	dbt (data build tool)
+Database	PostgreSQL
+Environment	Ubuntu on WSL2
+Source Data	Excel files (branch performance)
+---
+🏗️ Architecture
+```
+Excel Files (Branch Targets \& Actuals)
+        ↓
+Meltano (Extract \& Load → PostgreSQL raw schema)
+        ↓
+dbt (Transform → clean models, aggregations, tests)
+        ↓
+PostgreSQL (Final reporting tables)
+        ↓
+Airflow DAG (Orchestrates full pipeline on schedule)
+```
+---
+📈 Database Schema
+The pipeline produces the following transformed tables in PostgreSQL:
+`stg\_branch\_performance` — Cleaned and typed staging layer from raw Excel data
+`fct\_branch\_summary` — Aggregated branch-wise actuals vs targets
+`fct\_top\_performers` — Ranked branches by achievement percentage
+`fct\_target\_gap` — Branches with highest gap between target and actual
+---
+🚀 Key Features
+Automated Scheduling — Daily Airflow DAGs run the full pipeline without manual intervention
+Data Quality Tests — dbt tests validate nulls, uniqueness, and referential integrity
+Domain-Driven Modeling — Data modeled to reflect real NBFC branch reporting structure
+Error Handling — Custom Airflow paths and dbt profiles configured for local WSL2 environment
+---
+📁 Project Structure
+```
+finance-branch-pipeline/
+├── data/
+│   └── branch\_performance.xlsx       # Sample source data
+├── meltano/
+│   └── meltano.yml                   # Meltano ELT config
+├── dbt/
+│   ├── models/
+│   │   ├── staging/
+│   │   │   └── stg\_branch\_performance.sql
+│   │   └── marts/
+│   │       ├── fct\_branch\_summary.sql
+│   │       ├── fct\_top\_performers.sql
+│   │       └── fct\_target\_gap.sql
+│   ├── tests/
+│   └── dbt\_project.yml
+├── airflow/
+│   └── dags/
+│       └── finance\_pipeline\_dag.py   # Main Airflow DAG
+├── requirements.txt
+└── README.md
+```
+---
+⚙️ How to Run
+Prerequisites
+Python 3.10+
+PostgreSQL running locally
+WSL2 (Ubuntu)
+Setup
+```bash
+# Clone the repo
+git clone https://github.com/sathyadev025-source/finance-branch-pipeline.git
+cd finance-branch-pipeline
 
-## 🏏 Project 2: Cricket T20 Data Pipeline (Modern Data Stack)
+# Create virtual environment
+python -m venv .venv
+source .venv/bin/activate
 
-An automated Data Engineering pipeline that extracts raw ball-by-ball T20 match data, processes it locally, and loads it into a database for visual analytics.
+# Install dependencies
+pip install -r requirements.txt
+```
+Run with Airflow
+```bash
+# Set Airflow home
+export AIRFLOW\_HOME=\~/projects/finance-branch-pipeline/airflow\_home
 
-### 🛠️ Tech Stack
-* **Orchestration:** Apache Airflow
-* **Database:** PostgreSQL
-* **Processing:** Python (Pandas & SQLAlchemy)
-* **Visualization:** Metabase
+# Initialize Airflow
+airflow db init
 
-### 🏗️ Architecture
-1. **Extract:** Python extracts raw JSON ball-by-ball match data from Cricsheet.
-2. **Transform:** Pandas cleans the data, handles missing values, and structures delivery records.
-3. **Load:** Automatically inserts records into a local Postgres database (successfully loaded **45,734+ rows**).
-4. **Orchestrate:** An Airflow DAG schedules and runs the pipeline automatically using a `BashOperator`.
-5. **Visualize:** Native Metabase instance aggregates metrics like Strike Rate and Bowler Economy.
-
-### 🚀 How to Run Cricket Pipeline
-1. Make sure you are in the virtual environment: `source .venv-airflow/bin/activate`
-2. Ensure Airflow is running: `export AIRFLOW_HOME=~/projects/training-kit/airflow_home && airflow scheduler`
-3. Run Metabase: `java -jar metabase.jar`
+# Start scheduler
+airflow scheduler
+```
+Run dbt Transformations
+```bash
+cd dbt
+dbt run
+dbt test
+```
+---
+📊 Sample Data
+Branch performance data includes:
+Branch Name & Region
+Target Amount (monthly)
+Actual Disbursement
+Achievement %
+Product Category (Home Loan, Personal Loan, etc.)
+---
+🎯 Business Value
+This pipeline replicates a real reporting workflow used in NBFC/banking environments — where branch managers and regional heads track daily performance against targets. Automating this with a modern ELT stack eliminates manual Excel reporting and enables near-real-time visibility.
+---
+👤 Author
+Sathya Moorthi R  
+GitHub | LinkedIn
